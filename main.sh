@@ -13,27 +13,27 @@
 # Some Placeholders: [!] [*] [✓] [✗]
 
 # Default defconfig to use for builds.
-export CONFIG=dragonheart_defconfig
+export CONFIG=ice_defconfig
 
 # Default directory where kernel is located in.
 KDIR=$(pwd)
 export KDIR
 
 # Device name.
-export DEVICE="OnePlus 7 Series"
+export DEVICE="Xiaomi Redmi A1"
 
 # Date of build.
 DATE=$(date +"%Y-%m-%d")
 export DATE
 
 # Device codename.
-export CODENAME="op7"
+export CODENAME="ice"
 
 # Builder name.
-export BUILDER="cyberknight777"
+export BUILDER="matheus"
 
 # Kernel repository URL.
-export REPO_URL="https://github.com/cyberknight777/dragonheart_kernel_oneplus_sm8150"
+export REPO_URL="https://github.com/MiCode/Xiaomi_Kernel_OpenSource/tree/ice-s-oss"
 
 # Commit hash of HEAD.
 COMMIT_HASH=$(git rev-parse --short HEAD)
@@ -54,7 +54,7 @@ else
 fi
 
 # Telegram Information. Set 1 to enable. | Set 0 to disable.
-export TGI=1
+export TGI=0
 
 # Number of jobs to run.
 PROCS=$(nproc --all)
